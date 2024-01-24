@@ -1,0 +1,16 @@
+:root {
+    --background-blue: rgb(9, 10, 48);
+    --font-light-grey: rgb(189, 189, 189);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: var(--font-light-grey);
+    background-color: var(--background-blue);
+}
