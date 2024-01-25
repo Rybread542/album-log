@@ -1,8 +1,11 @@
 :root {
-    --background-blue: rgb(9, 10, 48);
-    --font-light-grey: rgb(189, 189, 189);
-    --log-page-bg: rgb(116, 116, 116);
+    --background-blue: rgba(111, 95, 255, 0.411);
+    --font-light-grey: rgb(185, 185, 185);
+    --search-highlight: rgb(121, 128, 165);
+    --log-page-bg: rgba(86, 95, 114, 0.774);
+    --log-container-bg: rgba(9, 4, 56, 0.747);
     --scrollbar: rgb(41, 42, 75);
+    --to-listen-bg: rgba(33, 4, 56, 0.747);
 }
 
 *, *::after, *::before {
@@ -14,29 +17,111 @@
 
 html {
     font-size: 16px;
+    font-family:'Exo 2', 'Courier New', Courier, monospace;
     color: var(--font-light-grey);
-    background-color: var(--background-blue);
+    background-image: linear-gradient(90deg, var(--background-blue), var(--background-blue)), url(bgimage.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    
 }
 
 .main-header {
-    text-align: center;
-    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 8rem;
+    height: 8vh;
+    margin-bottom: -2rem;
 }
 
 .album-pages-container {
-    background-color: rgb(63, 63, 63);
-    padding: 2rem;
+    background-color: var(--log-container-bg);
+    padding: 2.5rem;
+    height: calc(89vh + 2rem);
+}
+
+.tabs-container {
+    display: flex;
+}
+
+.tab {
+    background-color:var(--log-container-bg);
+    width:8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 0.2rem;
+}
+
+.tab:hover {
+    cursor:pointer;
+}
+
+.listen-tab {
+    background-color: var(--to-listen-bg);
+}
+
+.controls-bar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.search-container {
+    grid-column: 3/end;
+    text-align: right;
+    
+}
+
+.search-bar, .sort, .new-button {
+    background-color: var(--log-page-bg);
+    color: var(--font-light-grey);
+    border-radius: 20px;
+}
+
+.search-bar {
+    border:none;
+    padding: 0.15rem;
+    padding-left: 0.5rem;
+    caret-color: var(--font-light-grey);
+    width: clamp(5rem, 80%, 30rem);
+}
+
+.search-bar:focus{
+    outline:0.1rem solid var(--search-highlight);
+}
+
+.sort {
+    width: clamp(8rem, 65%, 20rem);
+    padding: 0.15rem;
+    border: none;
+}
+
+.sort:focus {
+    outline:none;
+}
+
+.sort-container {
+    grid-column: 1/3;
+}
+
+.new-button {
+    padding: 0.2rem 2rem;
+    border:none;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }
 
 .log-page-wrapper {
     background-color: var(--log-page-bg);
-    height:80vh;
+    height:100%;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -44,7 +129,7 @@ main {
 
 .log-page-wrapper::before {
     content: '';
-    box-shadow: inset 0 0 10px rgb(70, 70, 70);
+    box-shadow: inset 1px 1px 20px 10px rgb(65, 74, 94);
     border-radius: 20px;
     pointer-events: none;
     position: absolute;
@@ -56,10 +141,10 @@ main {
 
 .log-page {
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:flex-start;
     flex-wrap: wrap;
-    gap:0.5rem;
+    gap:0.75rem;
     padding:1rem;
     height: 100%;
     overflow-y: auto;
