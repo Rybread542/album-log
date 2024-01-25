@@ -14,3 +14,39 @@ html {
     color: var(--font-light-grey);
     background-color: var(--background-blue);
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.log-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding:2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.album-container {
+    display: flex;
+    width: clamp(100px, 40%, 300px);
+}
+
+.album-img {
+    max-width: 100%;
+    max-height: 100%;
+    height:auto;
+    width:auto;
+    flex:1;
+}
+
+
+
