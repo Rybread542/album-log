@@ -1,12 +1,14 @@
 :root {
     --background-blue: rgb(9, 10, 48);
     --font-light-grey: rgb(189, 189, 189);
+    --log-page-bg: rgb(116, 116, 116);
 }
 
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -26,26 +28,32 @@ main {
     margin-bottom: 5rem;
 }
 
+.log-page-wrapper {
+    background-color: var(--log-page-bg);
+    height: 80vh;
+    overflow-y: scroll;
+}
+
 .log-page {
     display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
     flex-wrap: wrap;
-    padding:2rem;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    gap:0.5rem;
+    padding:1rem;
+    
 }
 
 .album-container {
     display: flex;
-    width: clamp(100px, 40%, 300px);
+    width: clamp(100px, 20%, 250px);
 }
 
 .album-img {
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     height:auto;
     width:auto;
-    flex:1;
 }
 
 
