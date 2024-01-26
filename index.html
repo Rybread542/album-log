@@ -12,12 +12,31 @@
 <body>
 
     <article class="log-album-modal">
-        <div class="log-album-form">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+        <div class="log-album-modal-container">
+
+            <form  class='log-album-form' action="">
+                <label for="title">Title</label>
+                <input id="title" type="text">
+                <label for="artist">Artist</label>
+                <input id='artist' type="text">
+                <div class="log-album-form-rating">
+                    <p>Rating</p>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <label for="log-review">Review</label>
+                <textarea name="review" id="log-review" cols="30" rows="4"></textarea>
+                <button class="log-album-submit-button">Save</button>
+            </form>
+
+            <div class="log-album-form-art-container">
+                <img class="log-album-form-art" src="Inrainbowscover.png" alt="">
+            </div>
         </div>
+        
     </article>
 
     <main>
