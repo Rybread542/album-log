@@ -1,11 +1,11 @@
 :root {
-    --background-blue: rgba(111, 95, 255, 0.411);
-    --font-light-grey: rgb(185, 185, 185);
+    --background-blue: rgba(111, 103, 255, 0.45);
+    --font-light-grey: rgb(189, 189, 189);
     --search-highlight: rgb(121, 128, 165);
-    --log-page-bg: rgba(86, 95, 114, 0.774);
-    --log-container-bg: rgba(9, 4, 56, 0.747);
-    --scrollbar: rgb(41, 42, 75);
-    --to-listen-bg: rgba(33, 4, 56, 0.623);
+    --log-page-bg: rgba(86, 95, 120, 0.8);
+    --log-container-bg: rgba(13, 6, 60, 0.75);;
+    --scrollbar: rgba(45, 46, 79, 0.85);
+    --to-listen-bg: rgba(25, 4, 44, 0.65);
 }
 
 *, *::after, *::before {
@@ -23,6 +23,7 @@ html {
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .log-album-modal {
@@ -131,7 +132,8 @@ main {
 .album-pages-container {
     background-color: var(--log-container-bg);
     padding: 2.5rem;
-    height: calc(89vh + 2rem);
+    padding-bottom: 3.5rem;
+    height: calc(90vh + 2rem);
 }
 
 .tabs-container {
@@ -235,11 +237,13 @@ main {
     gap:20px;
     padding:1rem;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .scroll-container {
     height:100%;
     overflow-y: scroll;
+    
 }
 
 .to-listen-page {
