@@ -231,23 +231,27 @@ main {
 .log-page, .to-listen-page {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, auto));
     gap:20px;
     padding:1rem;
-    height: 100%;
     overflow-y: auto;
+}
+
+.scroll-container {
+    height:100%;
+    overflow-y: scroll;
 }
 
 .to-listen-page {
     display: none;
 }
 
-.log-page::-webkit-scrollbar {
+.scroll-container::-webkit-scrollbar, .to-listen-page::-webkit-scrollbar {
     background-color: var(--log-page-bg);
     width: 0.5rem;
 }
 
-.log-page::-webkit-scrollbar-thumb {
+.scroll-container::-webkit-scrollbar-thumb .to-listen-page::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar);
     border-radius: 20px;
 }

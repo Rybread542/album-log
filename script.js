@@ -47,7 +47,6 @@ function clearLogForm() {
 }
 
 
-
 submitButton.addEventListener('click', async function(e) {
     e.preventDefault();
     const title = titleField.value;
