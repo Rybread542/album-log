@@ -166,7 +166,7 @@ async function fillAlbumContainer(container, artist, title, rating) {
     albumText.children[0].textContent = artist;
     albumText.children[1].textContent = title;
 
-    albumImg.src = '/sample_album_art/Jeff_Buckley_grace.jpg';
+    albumImg.src = 'sample_album_art/Jeff_Buckley_grace.jpg';
 }
 
 function setAlbumContainerRating(ratingContainer, rating){
