@@ -14,18 +14,20 @@
     <article class="log-album-modal">
         <div class="log-album-modal-container">
             <button class="close-modal">X</button>
-            <form  class='log-album-form' action="">
+            <form class='log-album-form'>
                 <label for="title">Title</label>
-                <input id="title" type="text">
+                <input id="title" type="text" required>
                 <label for="artist">Artist</label>
-                <input id='artist' type="text">
+                <input id='artist' type="text" required>
                 <div class="log-album-form-rating">
                     <p>Rating</p>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="log-album-form-rating-stars">
+                        <i class="fa-regular fa-star form-star"></i>
+                        <i class="fa-regular fa-star form-star"></i>
+                        <i class="fa-regular fa-star form-star"></i>
+                        <i class="fa-regular fa-star form-star"></i>
+                        <i class="fa-regular fa-star form-star"></i>
+                    </div>
                 </div>
                 <label for="log-review">Review</label>
                 <textarea name="review" id="log-review" cols="30" rows="4"></textarea>
@@ -80,87 +82,15 @@
                                 <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <div class="album-hover-text">
-                                <h4>Radiohead</h4>
-                                <p>In Rainbows</p>
-                        </div>
-                        <img src="Inrainbowscover.png" alt="" class="album-img">
-                    </div>
-
-                    <div class="album-container">
-                        <div class="album-hover-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="album-hover-text">
-                                <h4>Radiohead</h4>
-                                <p>In Rainbows</p>
-                        </div>
-                        <img src="Inrainbowscover.png" alt="" class="album-img">
-                    </div>
-
-                    <div class="album-container">
-                        <div class="album-hover-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="album-hover-text">
-                                <h4>Radiohead</h4>
-                                <p>In Rainbows</p>
-                        </div>
-                        <img src="Inrainbowscover.png" alt="" class="album-img">
-                    </div>
-
-                    <div class="album-container">
-                        <div class="album-hover-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="album-hover-text">
-                                <h4>Radiohead</h4>
-                                <p>In Rainbows</p>
-                        </div>
-                        <img src="Inrainbowscover.png" alt="" class="album-img">
-                    </div>
-
-                    <div class="album-container">
-                        <div class="album-hover-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="album-hover-text">
-                                <h4>Radiohead</h4>
-                                <p>In Rainbows</p>
-                        </div>
-                        <img src="Inrainbowscover.png" alt="" class="album-img">
-                    </div>
-
-                    <div class="album-container">
-                        <div class="album-hover-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="album-hover-text">
-                                <h4>Radiohead</h4>
-                                <p>In Rainbows</p>
+                                <h4 class = 'album-hover-artist'>Radiohead</h4>
+                                <p class = 'album-hover-title'>In Rainbows</p>
                         </div>
                         <img src="Inrainbowscover.png" alt="" class="album-img">
                     </div>
                     
+                    
+                </div>
+                <div class="to-listen-page">
                     
                 </div>
             </div>
